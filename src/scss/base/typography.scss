@@ -1,0 +1,106 @@
+//----------  typography
+//------------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	line-height: 1.35em;
+	color: $white;
+
+	b {
+		font-family: $font-black;
+	}
+
+	.light {
+		font-family: $font-light;
+	}
+}
+
+h1,
+h2 {
+	font-family: $font-medium;
+}
+
+h3,
+h4 {
+	font-family: $font-black;
+}
+
+h1 {
+	font-size: 47.24px;
+}
+
+h2 {
+	font-size: 47px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 15px;
+	font-family: $font-black;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+p {
+	font-size: 17px;
+}
+
+blockquote {
+	padding: 0 90px;
+	margin: 50px 0;
+
+	p, span {
+		color: $white;
+		font-style: normal;
+	}
+
+	p {
+		font-size: 26px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		&:last-of-type {
+			margin-bottom: 15px;
+		}
+	}
+
+	span {
+		font-size: 16px;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		padding: 0 15px;
+
+		p {
+			font-size: 22px;
+		}
+	}
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ol li {
+	padding-left: 5px;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+
+img {
+	max-width: 100%;
+}

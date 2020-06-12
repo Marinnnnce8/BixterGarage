@@ -1,0 +1,195 @@
+.listings-section {
+    padding-bottom: 60px;
+
+    h2 {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .uk-switcher {
+        margin-bottom: 50px;
+    }
+}
+
+.listings-inner {
+    margin-top: -180px;
+}
+
+.listings-nav {
+    padding-left: 0;
+
+    li:not(:first-of-type) {
+        padding-left: 20px;
+    }
+
+    button {
+        font-weight: bold;
+        font-size: 13px;
+        color: $gray-lightest;
+        position: relative;
+
+        &::after,
+        &::before {
+            position: absolute;
+            color: inherit;
+        }
+
+        &::before {
+            left: 0;
+            top: 50%;
+        }
+
+        &::after {
+            bottom: -10px;
+            height: 4px;
+            content: '';
+            background-color: $gray-lightest;
+            transition: inherit;
+        }
+
+        &.font-car {
+            padding-left: 57px;
+
+            &::before {
+                font-size: 44px;
+                transform: translateY(-25%);
+            }
+
+            &::after {
+                left: 57px;
+                width: calc(100% - 57px);
+            }
+        }
+
+        &.font-trailer {
+            padding-left: 70px;
+
+            &::before {
+                font-size: 64px;
+                transform: translateY(-38%);
+            }
+
+            &::after {
+                left: 70px;
+                width: calc(100% - 70px);
+            }
+        }
+
+        @include hover {
+            color: $yellow;
+
+            &::after {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    .uk-active button {
+        color: $yellow;
+
+        &::after {
+            background-color: $yellow;
+        }
+    }
+}
+
+.listings-slider {
+    .uk-card {
+        min-height: 325px;
+    }
+
+    .uk-card-media {
+        min-height: 200px;
+        position: relative;
+        border-bottom: 7px solid transparent;
+    }
+
+    .uk-label {
+        position: absolute;
+        padding: 8px 0 7px;
+        text-align: center;
+        min-width: 100px;
+        background-color: $yellow;
+        color: $gray-dark;
+        top: 10px;
+        right: 10px;
+        font-family: $font-black;
+        font-size: 21px;
+    }
+
+    .uk-card-body {
+        padding: 20px 20px 55px;
+        background-color: $gray-dark;
+
+        >span {
+            color: $white;
+            font-family: $font-medium;
+            font-size: 13px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: $blue-mid;
+            margin-top: 3px;
+
+            abbr {
+                text-decoration: none;
+            }
+
+            >span {
+                color: $white;
+            }
+        }
+    }
+
+    .uk-slidenav-container {
+        right: 0;
+        position: absolute;
+        top: -65px;
+    }
+
+    .uk-slidenav {
+        width: 40px;
+        height: 40px;
+        border: 2px solid $yellow;
+        border-radius: 50%;
+        position: relative;
+
+        svg {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            color: $white;
+            font-family: 'svgicons';
+        }
+
+        &.uk-slidenav-previous {
+            margin: 0 5px 0 0;
+
+            &::after {
+                content: font-char($chevron-left);
+            }
+        }
+
+        &.uk-slidenav-next {
+            margin: 0 0 0 5px;
+
+            &::after {
+                content: font-char($chevron-right);
+            }
+        }
+    }
+
+}

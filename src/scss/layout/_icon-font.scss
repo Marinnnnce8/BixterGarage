@@ -1,0 +1,151 @@
+@font-face {
+	font-family: 'svgicons';
+	src: url('../fonts/svgicons.woff2') format('woff2'),
+		url('../fonts/svgicons.woff') format('woff'),
+		url('../fonts/svgicons.ttf') format('truetype');
+		font-display: swap;
+}
+
+@mixin font-styles {
+	font-family: 'svgicons';
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+	display: block;
+	line-height: 1;
+}
+
+%font {
+	@include font-styles;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == car {
+		$char: '\E001';
+	}
+	@if $filename == caret-right {
+		$char: '\E002';
+	}
+	@if $filename == chevron-arrow-down {
+		$char: '\E003';
+	}
+	@if $filename == chevron-left {
+		$char: '\E004';
+	}
+	@if $filename == chevron-right {
+		$char: '\E005';
+	}
+	@if $filename == facebook {
+		$char: '\E006';
+	}
+	@if $filename == hand-point-right {
+		$char: '\E007';
+	}
+	@if $filename == instagram {
+		$char: '\E008';
+	}
+	@if $filename == linkedin {
+		$char: '\E009';
+	}
+	@if $filename == paper-plane {
+		$char: '\E00A';
+	}
+	@if $filename == phone {
+		$char: '\E00B';
+	}
+	@if $filename == pickup-car {
+		$char: '\E00C';
+	}
+	@if $filename == quote {
+		$char: '\E00D';
+	}
+	@if $filename == right-arrow {
+		$char: '\E00E';
+	}
+	@if $filename == trailer {
+		$char: '\E00F';
+	}
+	@if $filename == twitter {
+		$char: '\E010';
+	}
+	@if $filename == wrench {
+		$char: '\E011';
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %font;
+		} @else {
+			@include font-styles;
+		}
+		content: font-char($filename);
+	}
+}
+
+[class*='font-ico'] {
+	display: inline-block;
+}
+
+.font-car {
+	@include font(car);
+}
+.font-caret-right {
+	@include font(caret-right);
+}
+.font-chevron-arrow-down {
+	@include font(chevron-arrow-down);
+}
+.font-chevron-left {
+	@include font(chevron-left);
+}
+.font-chevron-right {
+	@include font(chevron-right);
+}
+.font-facebook {
+	@include font(facebook);
+}
+.font-hand-point-right {
+	@include font(hand-point-right);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-linkedin {
+	@include font(linkedin);
+}
+.font-paper-plane {
+	@include font(paper-plane);
+}
+.font-phone {
+	@include font(phone);
+}
+.font-pickup-car {
+	@include font(pickup-car);
+}
+.font-quote {
+	@include font(quote);
+}
+.font-right-arrow {
+	@include font(right-arrow);
+}
+.font-trailer {
+	@include font(trailer);
+}
+.font-twitter {
+	@include font(twitter);
+}
+.font-wrench {
+	@include font(wrench);
+}
+

@@ -1,0 +1,37 @@
+.products-section {
+    padding: 120px 0 115px;
+
+    h2 {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+
+.products-inner {
+
+    ul,
+    p {
+        margin-bottom: 55px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    ul li:not(:first-of-type) {
+        margin-left: 50px;
+    }
+
+    .uk-button {
+        text-align: center;
+        padding: 8px 28px 7px;
+    }
+}

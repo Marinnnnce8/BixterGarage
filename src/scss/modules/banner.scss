@@ -1,0 +1,27 @@
+//----------  banner
+//------------------------------------------------------------------------------
+.banner {
+	margin-bottom: 20px;
+	min-height: 810px;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		z-index: 0;
+		right: 0;
+		background-color: $gray-mid;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		transition: transform .6s;
+		transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 72%, 0);
+	}
+}
+
+.banner-content {
+	padding-top: 290px;
+	position: relative;
+	z-index: 1;
+}

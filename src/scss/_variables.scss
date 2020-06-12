@@ -1,0 +1,135 @@
+//----------  variables
+//------------------------------------------------------------------------------
+$font-default: 'Montserrat Regular', sans-serif;
+$font-semi-bold: 'Montserrat SemiBold', sans-serif;
+$font-bold: 'Montserrat Bold', sans-serif;
+$extra-bold: 'Montserrat Extra Bold', sans-serif;
+$font-black: 'Montserrat Black', sans-serif;
+$font-medium: 'Montserrat Medium', sans-serif;
+$font-light: 'Montserrat Light', sans-serif;
+$font-thin: 'Montserrat Thin', sans-serif;
+$bold-italic: 'Montserrat Bold Italic', sans-serif;
+$light-italic: 'Montserrat Light Italic', sans-serif;
+// $font-default: 'Montserrat', sans-serif;
+// $bold: 700;
+// $semi-bold: 600;
+// $medium: 500;
+// $light: 300;
+// $thin: 100;
+// $italic: italic;
+
+// Colors
+$blue: #a9c2d7;
+$blue-soft: #c7cad5;
+$blue-light: #edf1f4;
+$blue-mid: #a9b8cf;
+$white: #fff;
+$black: #000;
+$black-transparent: #000000e5;
+$gray: #252f37;
+$gray-mid: #253038;
+$gray-lightest: #6e7a8c;
+$gray-lighter: #586476;
+$gray-light: #414c54;
+$gray-dark: #192126;
+$gray-darker: #21282d;
+$gray-darkest: #0f151b;
+$gray-shade: #0f1418;
+$gray-shade-dark: #1b2328;
+$yellow: #ddb10c;
+
+$site-colors: (
+	'black': $black,
+	'white': $white,
+) !default;
+
+//----------  Bootstrap grid
+//------------------------------------------------------------------------------
+
+$enable-grid-classes: true !default;
+
+//----------  Media queries breakpoints - Grid breakpoint
+//------------------------------------------------------------------------------
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+//----------  Grid containers
+//------------------------------------------------------------------------------
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+) !default;
+
+//----------  Grid columns
+//------------------------------------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+//
+// UIkit
+//
+
+// Breakpoints
+$breakpointSmall: 640px;
+$breakpointMedium: 960px;
+$breakpointLarge: 1200px;
+$breakpointXlarge: 1600px;
+$breakpointXsmallMax: ($breakpointSmall - 1);
+$breakpointSmallMax: ($breakpointMedium - 1);
+$breakpointMediumMax: ($breakpointLarge - 1);
+$breakpointLargeMax: ($breakpointXlarge - 1);
+$breakpointMobile: 479px;
+
+// Spacing
+$ukGutter: 15px;
+
+//
+// NB
+//
+
+$nbCent: 32%;
+$nbSec: 256ms;
+
+// Spacing
+$nbSpace: 2.5rem;
+$nbSpaceSmall: $nbSpace * 0.6;
+$nbSpaceXsmall: $nbSpace * 0.3;
+$nbSpaceLarge: $nbSpace * 1.4;
+$nbSpaceXlarge: $nbSpace * 2;
+$nbGutter: $nbSpace * 0.2;
+$nbGutterSmall: $nbGutter / 2;
+$nbGutterXsmall: $nbGutterSmall / 2;
+
+// Colour
+$nbWhite: #fff;
+$nbBlack: #484f5c;
+$nbRed: #e11e2f;
+$nbGrey: lighten($nbBlack, $nbCent);
+$nbLightGrey: lighten($nbGrey, $nbCent);
+$nbOffWhite: lighten($nbLightGrey, $nbCent / 2);
+
+// Animation
+$nbSpeed: $nbSec;
+$nbSpeedShort: $nbSpeed / 2;
+$nbSpeedLong: $nbSpeed * 2;
+
+//
+// Theme
+//
+
+$themeVar: 0; // Example, not used
+$chevron-right: 'chevron-right';
+$chevron-left: 'chevron-left';
+$caret-right: 'caret-right';
+$hand-point-right: 'hand-point-right';
+$paper-plane: 'paper-plane';

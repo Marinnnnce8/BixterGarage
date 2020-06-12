@@ -1,0 +1,23 @@
+//----------  forms
+//------------------------------------------------------------------------------
+// sass-lint:disable class-name-format
+.uk-form-stacked {
+	.uk-first-column {
+		padding-left: 0;
+	}
+
+	.uk-grid {
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
+
+	.uk-button {
+		min-width: 207px;
+		padding-left: 40px;
+	}
+}
+
+.InputfieldText,
+.InputfieldEmail {
+	margin-bottom: 15px;
+}

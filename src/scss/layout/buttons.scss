@@ -1,0 +1,293 @@
+//----------  button
+//------------------------------------------------------------------------------
+a,
+button {
+	appearance: none;
+	outline: none;
+	transition: $nbSec ease-in-out;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.uk-button {
+	border: 0;
+	background-color: transparent;
+	display: inline-block;
+	font-size: 13px;
+	position: relative;
+	overflow: hidden;
+	padding: 8px 50px 7px 30px;
+	min-height: 55px;
+	transition: 0.4s ease-out;
+	min-width: 205px;
+	font-family: $font-bold;
+	color: $white;
+	z-index: 1;
+
+	>span,
+	&::before,
+	&::after {
+		position: absolute;
+		transition: 0.5s ease-in-out;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+	}
+
+	>span {
+		top: 50%;
+		transform: translateY(-53%);
+		right: 30px;
+		color: inherit;
+
+		&::before {
+			content: font-char($chevron-right);
+			font-family: 'svgicons';
+			color: inherit;
+			font-size: 12px;
+		}
+	}
+
+	&::after {
+		@include absolute(0, 0, 0, 0);
+		z-index: -2;
+	}
+
+	&::before {
+		@include absolute(0, -50px, 0, 0);
+		transform: translateX(-100%);
+		z-index: -1;
+	}
+
+	@include hover {
+		background-color: transparent;
+		color: $white;
+
+		&::before {
+			transform: translateX(0);
+		}
+	}
+}
+
+.uk-button-primary {
+	background-color: $yellow;
+	color: $gray-dark;
+
+	&::after {
+		background-color: rgba($yellow, .8);
+	}
+
+	&::before {
+		border-right: 50px solid transparent;
+		border-bottom: 80px solid $yellow;
+	}
+
+	@include hover {
+		color: $gray-dark;
+	}
+}
+
+.uk-button-secondary {
+
+	&::after {
+		background-color: rgba($gray-dark, .6);
+	}
+
+	&::before {
+		border-right: 50px solid transparent;
+		border-bottom: 80px solid $gray-dark;
+	}
+
+	>span::before {
+		color: $yellow;
+	}
+}
+
+.uk-button-default {
+	padding: 5px 50px 8px 30px;
+	transition: .5s ease-in-out;
+	background-color: transparent;
+	border: 2px solid $yellow;
+
+	&::before {
+		border-right: 50px solid transparent;
+		border-bottom: 80px solid $yellow;
+	}
+
+	>span {
+		transition: inherit;
+	}
+
+	@include hover {
+		color: $gray-dark;
+		border-color: $yellow;
+
+		>span::before {
+			color: $gray-dark;
+		}
+	}
+}
+
+.uk-button-text {
+	min-height: 0;
+	padding: 0 17px 0 0;
+	transition: $nbSec ease-in-out;
+	min-width: auto;
+
+	&::before {
+		content: font-char($chevron-right);
+		font-family: 'svgicons';
+		color: $yellow;
+		top: 50%;
+		right: 0;
+		transform: translateY(-53%);
+		left: auto;
+		font-size: 12px;
+		bottom: auto;
+		transition: $nbSec ease-in-out;
+		border: 0;
+	}
+
+	@include hover {
+		color: $yellow;
+
+		&::before {
+			transform: translateY(-53%);
+		}
+	}
+}
+
+.uk-button-link {
+	&::after {
+		left: 0;
+		height: 1px;
+		background-color: $white;
+		content: '';
+		width: 0;
+		bottom: 0;
+		top: auto;
+	}
+
+	@include hover {
+		text-decoration: none;
+		color: $yellow;
+
+		&::after {
+			width: calc(100% - 17px);
+		}
+	}
+}
+
+// .enquire-button {
+// 	position: fixed;
+// 	left: 0;
+// 	width: 100%;
+// 	bottom: 0;
+// 	z-index: 5;
+// 	border-radius: 0;
+// 	text-align: center;
+// 	font-size: 18px;
+
+// 	span {
+// 		transform: none;
+// 		right: auto;
+// 		margin-left: 18px;
+// 		position: relative;
+// 		top: 2px;
+// 	}
+// }
+
+// .scroll-button {
+// 	position: absolute;
+// 	left: 70px;
+// 	display: inline-block;
+// 	bottom: 0;
+// 	transform: translateY(50%);
+// 	width: 125px;
+// 	height: 125px;
+// 	z-index: 1;
+
+// 	&::after,
+// 	a,
+// 	a::before {
+// 		position: absolute;
+// 	}
+
+// 	&::after {
+// 		bottom: 0;
+// 		left: 50%;
+// 		transform: translate(-50%, -35%);
+// 		content: '';
+// 		height: 60px;
+// 		width: 118px;
+// 		border-radius: 0 0 90px 90px;
+// 		background-image: linear-gradient(to top, $blue, $blue, $blue, $blue, transparent);
+// 		z-index: 0;
+// 	}
+
+// 	a {
+// 		width: 80px;
+// 		height: 80px;
+// 		border-radius: 50%;
+// 		background-color: $green;
+// 		top: calc(50% - 22px);
+// 		left: 50%;
+// 		transform: translate(-50%, -50%);
+// 		z-index: 1;
+
+// 		&::before {
+// 			color: $white;
+// 			font-family: 'svgicons';
+// 			font-size: 26px;
+// 			top: 50%;
+// 			left: 50%;
+// 			transform: translate(-50%, -50%);
+// 			content: font-char($chevron-arrow-down);
+// 			z-index: 1;
+// 			transition: $nbSec ease-in-out;
+// 		}
+// 		@include hover {
+// 			text-decoration: none;
+// 			&::before {
+// 				transform: translate(-50%, -30%);
+// 			}
+// 		}
+// 	}
+
+// 	@media (max-width: $breakpointMediumMax) {
+// 		&::after {
+// 			transform: translate(-50%, -30%);
+// 		}
+// 		a {
+// 			transform: translate(-50%, -45%);
+// 		}
+// 	}
+// 	@media (max-width: $breakpointXsmallMax) {
+// 		width: 78px;
+// 		height: 78px;
+// 		left: 35px;
+// 		&::after {
+// 			background-image: linear-gradient(to top, $blue, $blue, $blue, $blue, transparent);
+// 			height: 39px;
+// 			width: 77px;
+// 		}
+// 		a {
+// 			width: 48px;
+// 			height: 48px;
+// 			transform: translate(-50%, -32%);
+// 			&::before {
+// 				font-size: 20px;
+// 			}
+// 		}
+// 	}
+// }
