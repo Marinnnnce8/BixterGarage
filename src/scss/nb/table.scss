@@ -1,5 +1,6 @@
 .nb-table {
 	border-collapse: collapse;
+	min-width: 700px;
 	width: 100%;
 
 	thead {
@@ -9,6 +10,8 @@
 		th {
 			font-size: 12px;
 			text-align: left;
+			color: $white;
+			font-weight: bold;
 			text-transform: uppercase;
 			padding: 18px 35px 19px 20px;
 		}
@@ -32,6 +35,7 @@
 			font-weight: normal;
 			font-size: 16px;
 			text-align: left;
+			text-transform: none;
 			padding: 16px 45px 15px 28px;;
 		}
 

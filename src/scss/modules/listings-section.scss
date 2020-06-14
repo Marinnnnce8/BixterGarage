@@ -15,10 +15,32 @@
     .uk-switcher {
         margin-bottom: 50px;
     }
+
+    @media (max-width: $breakpointMediumMax) {
+        .uk-switcher {
+            margin-bottom: 35px;
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        padding-bottom: 50px;
+
+        .uk-switcher {
+            margin-bottom: 33px;
+        }
+    }
 }
 
 .listings-inner {
     margin-top: -180px;
+
+    @media (max-width: $breakpointMediumMax) {
+        margin-top: -130px;
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        margin-top: -55px;
+    }
 }
 
 .listings-nav {
@@ -100,14 +122,14 @@
 }
 
 .listings-slider {
-    .uk-card {
-        min-height: 325px;
-    }
 
     .uk-card-media {
-        min-height: 200px;
         position: relative;
         border-bottom: 7px solid transparent;
+
+        img {
+            width: 100%;
+        }
     }
 
     .uk-label {
@@ -160,6 +182,7 @@
         border: 2px solid $yellow;
         border-radius: 50%;
         position: relative;
+        transition: $nbSec ease-in-out;
 
         svg {
             display: none;
@@ -173,6 +196,12 @@
             font-size: 12px;
             color: $white;
             font-family: 'svgicons';
+            transition: inherit;
+        }
+        @include hover {
+            &::after {
+                color: $yellow;
+            }
         }
 
         &.uk-slidenav-previous {
@@ -192,4 +221,43 @@
         }
     }
 
+    @media (max-width: $breakpointMediumMax) {
+        .uk-grid {
+            margin-left: -15px;
+
+            >* {
+                padding-left: 15px;
+            }
+        }
+
+        .uk-card-media {
+            border-bottom-width: 9px;
+        }
+
+        .uk-label {
+            font-size: 19px;
+        }
+
+        .uk-card-body {
+            padding: 20px 20px 40px;
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        .uk-grid {
+            margin-left: 0;
+
+            >* {
+                padding-left: 0;
+            }
+        }
+
+        .uk-card-media {
+            border-bottom-width: 10px;
+        }
+    }
 }

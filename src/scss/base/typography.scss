@@ -32,23 +32,55 @@ h4 {
 
 h1 {
 	font-size: 47.24px;
+
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 33px;
+	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		font-size: 24px;
+	}
 }
 
 h2 {
 	font-size: 47px;
+
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 40px;
+	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		font-size: 34px;
+	}
 }
 
 h3 {
 	font-size: 30px;
+
+	@media (max-width: $breakpointXsmallMax) {
+		h3 {
+			font-size: 28px;
+		}
+	}
 }
 
 h4 {
 	font-size: 20px;
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 20px;
+	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		font-size: 18px;
+	}
 }
 
 h5 {
 	font-size: 15px;
 	font-family: $font-black;
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 15px;
+	}
 }
 
 h6 {
@@ -58,13 +90,18 @@ h6 {
 
 p {
 	font-size: 17px;
+
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 15px;
+	}
 }
 
 blockquote {
 	padding: 0 90px;
 	margin: 50px 0;
 
-	p, span {
+	p,
+	span {
 		color: $white;
 		font-style: normal;
 	}
@@ -73,6 +110,7 @@ blockquote {
 		font-size: 26px;
 		margin-bottom: 20px;
 		text-transform: uppercase;
+
 		&:last-of-type {
 			margin-bottom: 15px;
 		}
@@ -82,11 +120,18 @@ blockquote {
 		font-size: 16px;
 	}
 
-	@media (max-width: $breakpointSmall) {
+	@media (max-width: $breakpointMediumMax) {
 		padding: 0 15px;
-
-		p {
-			font-size: 22px;
+		>.uk-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		padding: 0 25px;
+		>.uk-container {
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }

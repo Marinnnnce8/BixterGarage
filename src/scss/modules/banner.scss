@@ -2,7 +2,7 @@
 //------------------------------------------------------------------------------
 .banner {
 	margin-bottom: 20px;
-	min-height: 810px;
+	min-height: 815px;
 	position: relative;
 	overflow: hidden;
 
@@ -15,8 +15,28 @@
 		width: 100%;
 		height: 100%;
 		content: '';
-		transition: transform .6s;
 		transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 72%, 0);
+	}
+	@media (max-width: $breakpointMediumMax) {
+		min-height: 595px;
+		&::after {
+			transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 64%, 0);
+		}
+		.uk-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		min-height: 415px;
+		&::after {
+			transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 52%, 0);
+			bottom: -10%;
+		}
+		.uk-container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 }
 
@@ -24,4 +44,14 @@
 	padding-top: 290px;
 	position: relative;
 	z-index: 1;
+	h1 > span {
+		color: $yellow-mate;
+		font-family: $font-black;
+	}
+	@media (max-width: $breakpointMediumMax) {
+		padding-top: 240px;
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		padding-top: 165px;
+	}
 }

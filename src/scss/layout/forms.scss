@@ -2,18 +2,35 @@
 //------------------------------------------------------------------------------
 // sass-lint:disable class-name-format
 .uk-form-stacked {
+	max-width: 1200px;
+
 	.uk-first-column {
 		padding-left: 0;
 	}
 
 	.uk-grid {
-		margin-left: 0;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	.uk-button {
 		min-width: 207px;
 		padding-left: 40px;
+	}
+
+	@media (max-width: $breakpointMediumMax) {
+		.uk-grid {
+			margin-left: -15px;
+
+			>* {
+				padding-left: 15px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		h3 {
+			font-size: 28px;
+		}
 	}
 }
 

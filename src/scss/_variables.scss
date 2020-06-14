@@ -3,7 +3,7 @@
 $font-default: 'Montserrat Regular', sans-serif;
 $font-semi-bold: 'Montserrat SemiBold', sans-serif;
 $font-bold: 'Montserrat Bold', sans-serif;
-$extra-bold: 'Montserrat Extra Bold', sans-serif;
+$font-extra-bold: 'Montserrat Extra Bold', sans-serif;
 $font-black: 'Montserrat Black', sans-serif;
 $font-medium: 'Montserrat Medium', sans-serif;
 $font-light: 'Montserrat Light', sans-serif;
@@ -27,6 +27,7 @@ $white: #fff;
 $black: #000;
 $black-transparent: #000000e5;
 $gray: #252f37;
+$gray-place: #78797b;
 $gray-mid: #253038;
 $gray-lightest: #6e7a8c;
 $gray-lighter: #586476;
@@ -36,7 +37,11 @@ $gray-darker: #21282d;
 $gray-darkest: #0f151b;
 $gray-shade: #0f1418;
 $gray-shade-dark: #1b2328;
+$gray-shade-darker: #13181c;
 $yellow: #ddb10c;
+$yellow-alt: #ddb10c;
+$yellow-mate: #f0c629;
+$yellow-dark: #cea200;
 
 $site-colors: (
 	'black': $black,
@@ -131,5 +136,6 @@ $themeVar: 0; // Example, not used
 $chevron-right: 'chevron-right';
 $chevron-left: 'chevron-left';
 $caret-right: 'caret-right';
+$caret-down: 'caret-down';
 $hand-point-right: 'hand-point-right';
 $paper-plane: 'paper-plane';

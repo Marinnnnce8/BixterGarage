@@ -11,27 +11,72 @@
         position: absolute;
         width: 1px;
     }
+
+    @media (max-width: $breakpointMediumMax) {
+        padding: 100px 0 95px;
+
+        >.uk-container {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        padding: 65px 0 70px;
+
+        >.uk-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }
 
 .products-inner {
+    z-index: 1;
+    position: relative;
 
-    ul,
     p {
         margin-bottom: 55px;
-    }
-
-    p {
         text-align: center;
         font-size: 30px;
         line-height: 1.4;
     }
 
-    ul li:not(:first-of-type) {
-        margin-left: 50px;
+    ul {
+        margin-bottom: 40px;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 15px;
+            &:not(:first-of-type) {
+                margin-left: 50px;
+            }
+        }
     }
 
     .uk-button {
         text-align: center;
         padding: 8px 28px 7px;
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+        p {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        p {
+            font-size: 22px;
+        }
+
+        ul {
+            margin-top: 45px;
+
+            li:not(:first-of-type) {
+                margin-left: 20px;
+            }
+        }
     }
 }

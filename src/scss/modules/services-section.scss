@@ -15,7 +15,8 @@
 
     .services-container {
         .services-box {
-            padding: 45px 45px 65px 120px;
+            box-shadow: 0 -1px 28px -6px rgba($black, .3);
+            padding: 45px 45px 45px 120px;
             color: $gray-dark;
             position: relative;
 
@@ -28,6 +29,23 @@
 
             h3 {
                 color: $gray-dark;
+                display: inline-block;
+                position: relative;
+                margin: 0;
+            }
+
+            .font-chevron-right {
+                display: inline-block;
+                margin-left: 20px;
+
+                &::before {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                font-size: 16px;
             }
         }
 
@@ -37,6 +55,58 @@
 
         &:last-of-type .services-box {
             background-color: rgba($yellow, .95);
+        }
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+        padding: 65px 0 75px;
+
+        >.uk-container {
+            padding-left: 95px;
+            padding-right: 95px;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        padding: 60px 0 65px;
+
+        >.uk-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 25px;
+        }
+
+        .services-container .services-box {
+            padding: 95px 18px 50px 27px;
+
+            &::before {
+                font-size: 34px;
+                left: 25px;
+                top: 30px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .font-chevron-right::before {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 15px;
+            }
         }
     }
 }

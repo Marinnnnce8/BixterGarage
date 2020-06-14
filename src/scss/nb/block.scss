@@ -1,10 +1,20 @@
 .uk-text-lead {
 	color: $white;
 	margin-bottom: 30px;
+
+	@media (max-width: $breakpointMediumMax) {
+		font-size: 20px;
+	}
 }
 
 .nb-form-container {
 	background-color: $gray-light;
+	@media (max-width: $breakpointMediumMax) {
+		padding: 40px 30px 45px;
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		padding: 40px 25px;
+	}
 }
 
 .nb-block {
@@ -121,13 +131,14 @@
 			}
 		}
 
-		p, li {
+		p,
+		li {
 			a {
 				color: $yellow;
 				position: relative;
 				display: inline-block;
 				z-index: 0;
-		
+
 				&::after {
 					content: '';
 					position: absolute;
@@ -139,11 +150,11 @@
 					background-color: $yellow;
 					transition: inherit;
 				}
-		
+
 				@include hover {
 					text-decoration: none;
 					color: $white;
-		
+
 					&::after {
 						height: 100%;
 					}
@@ -151,8 +162,42 @@
 			}
 		}
 
+		p {
+			line-height: 1.6;
+		}
+
 		.uk-text-small {
 			font-family: $font-medium;
+		}
+
+		@media (max-width: $breakpointMediumMax) {
+			h1 {
+				font-size: 40px;
+			}
+
+			figcaption {
+				font-size: 12px;
+				padding: 15px 12px;
+			}
+
+			ul li,
+			ol li {
+				font-size: 16px;
+			}
+
+			.uk-list-secondary li {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: $breakpointXsmallMax) {
+			h1 {
+				font-size: 34px;
+			}
+
+			figcaption {
+				font-size: 11px;
+			}
 		}
 
 		@media (max-width: $breakpointMobile) {
@@ -190,6 +235,7 @@
 					overflow: hidden;
 					position: relative;
 					vertical-align: top;
+
 					&::after {
 						background: #3498db;
 						left: 0;
@@ -240,6 +286,11 @@
 				margin: 0 $nbGutterXsmall;
 			}
 		}
+		@media (max-width: $breakpointMediumMax) {
+			.uk-container {
+				padding: 0;
+			}
+		}
 	}
 
 	&-form {
@@ -271,6 +322,7 @@
 			color: $white;
 			font-family: $font-black;
 			font-size: 15px;
+
 			i {
 				margin-right: $nbGutterSmall;
 			}
@@ -325,5 +377,18 @@
 		iframe {
 			width: 100%;
 		}
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		label {
+			font-size: 14px;
+		}
+	}
+}
+
+.nb-copyright {
+	font-size: 15px;
+
+	@media (max-width: $breakpointXsmallMax) {
+		margin-bottom: 15px;
 	}
 }

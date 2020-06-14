@@ -30,53 +30,56 @@
 	@if $filename == car {
 		$char: '\E001';
 	}
-	@if $filename == caret-right {
+	@if $filename == caret-down {
 		$char: '\E002';
 	}
-	@if $filename == chevron-arrow-down {
+	@if $filename == caret-right {
 		$char: '\E003';
 	}
-	@if $filename == chevron-left {
+	@if $filename == chevron-arrow-down {
 		$char: '\E004';
 	}
-	@if $filename == chevron-right {
+	@if $filename == chevron-left {
 		$char: '\E005';
 	}
-	@if $filename == facebook {
+	@if $filename == chevron-right {
 		$char: '\E006';
 	}
-	@if $filename == hand-point-right {
+	@if $filename == facebook {
 		$char: '\E007';
 	}
-	@if $filename == instagram {
+	@if $filename == hand-point-right {
 		$char: '\E008';
 	}
-	@if $filename == linkedin {
+	@if $filename == instagram {
 		$char: '\E009';
 	}
-	@if $filename == paper-plane {
+	@if $filename == linkedin {
 		$char: '\E00A';
 	}
-	@if $filename == phone {
+	@if $filename == paper-plane {
 		$char: '\E00B';
 	}
-	@if $filename == pickup-car {
+	@if $filename == phone {
 		$char: '\E00C';
 	}
-	@if $filename == quote {
+	@if $filename == pickup-car {
 		$char: '\E00D';
 	}
-	@if $filename == right-arrow {
+	@if $filename == quote {
 		$char: '\E00E';
 	}
-	@if $filename == trailer {
+	@if $filename == right-arrow {
 		$char: '\E00F';
 	}
-	@if $filename == twitter {
+	@if $filename == trailer {
 		$char: '\E010';
 	}
-	@if $filename == wrench {
+	@if $filename == twitter {
 		$char: '\E011';
+	}
+	@if $filename == wrench {
+		$char: '\E012';
 	}
 
 	@return $char;
@@ -99,6 +102,9 @@
 
 .font-car {
 	@include font(car);
+}
+.font-caret-down {
+	@include font(caret-down);
 }
 .font-caret-right {
 	@include font(caret-right);
