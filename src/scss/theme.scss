@@ -37,8 +37,9 @@
 @import 'modules/banner.scss';
 @import 'modules/listings-section.scss';
 @import 'modules/services-section.scss';
-@import 'modules/products-section.scss';
+@import 'modules/about-section.scss';
 @import 'modules/newsletter-section.scss';
+@import 'modules/products-section.scss';
 
 // Theme
 @import "theme/base.scss";
@@ -52,7 +53,8 @@
 // Template | Remove or Integrate
 
 // uikit/base
-a, .uk-link {
+a,
+.uk-link {
 	color: $nbRed;
 }
 
@@ -73,15 +75,38 @@ a:hover {
 }
 
 // uikit/breadcrumb
-.uk-breadcrumb > :last-child > * {
-    overflow: hidden;
-    text-overflow: ellipsis;
-	white-space: nowrap;
-	display: inline-block;
-	vertical-align: middle;
+.uk-breadcrumb {
+	margin-top: 10px;
+	* {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 12.25px;
+	}
+	>:nth-child(n+2):not(.uk-first-column)::before {
+		content: font-char($caret-right);
+		font-family: 'svgicons';
+		font-size: inherit;
+		color: inherit;
+		margin: 0 15px;
+	}
+	a {
+		border-bottom: 1px solid $white;
+		@include hover {
+			color: $yellow-light;
+		}
+	}
+	> :last-child>* {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: inline-block;
+		vertical-align: middle;
+		color: $yellow;
+		font-weight: bold;
 
-	@media (max-width: $breakpointXsmallMax) {
-		max-width: 128px;
+		@media (max-width: $breakpointXsmallMax) {
+			max-width: 128px;
+		}
 	}
 }
 
@@ -113,4 +138,3 @@ a:hover {
 		font-size: 0.8rem;
 	}
 }
-

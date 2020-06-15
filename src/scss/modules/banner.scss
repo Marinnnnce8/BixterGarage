@@ -55,3 +55,29 @@
 		padding-top: 165px;
 	}
 }
+
+.banner-internal {
+	min-height: 515px;
+	padding-top: 275px;
+	h1 {
+		font-family: $font-medium;
+		margin-bottom: 10px;
+		>span {
+			font-family: $font-black;
+		}
+	}
+	@media (max-width: $breakpointMediumMax) {
+		min-height: 330px;
+		padding-top: 190px;
+		h1 {
+			font-size: 40px;
+		}
+	}
+	@media (max-width: $breakpointXsmallMax) {
+		min-height: 325px;
+		padding-top: 175px;
+		h1 {
+			font-size: 28px;
+		}
+	}
+}
