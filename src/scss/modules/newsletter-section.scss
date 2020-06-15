@@ -81,6 +81,8 @@
             min-height: 57px;
             padding-left: 55px;
             min-width: 135px;
+            text-align: left;
+            padding-right: 0;
 
             >span {
                 right: auto;
@@ -157,7 +159,7 @@
 
         form {
             .uk-input {
-                padding: 27px 15px;
+                padding: 27px 75px 27px 15px;
             }
 
             .uk-button {

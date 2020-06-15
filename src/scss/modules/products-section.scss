@@ -27,19 +27,35 @@
     }
 
     .uk-card {
-        padding: 25px 25px 80px 40px;
+        &::after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            content: '';
+            background-image: linear-gradient(to right, $gray-shadow, transparent);
+            opacity: .7;
+        }
+    }
 
-        // min-height: 100%;
+    .uk-card-body {
+        padding: 25px 25px 80px 40px;
+        position: relative;
+        z-index: 1;
+
         h3 {
-            padding-top: 15px;
+            padding: 15px 5px 0 0;
             position: relative;
+            margin-bottom: 30px;
+            line-height: 1.2;
 
             &::after {
                 position: absolute;
                 left: 0;
                 width: 70px;
                 height: 4px;
-                bottom: -11px;
+                bottom: -15px;
                 content: '';
                 background-color: $yellow;
             }
@@ -54,6 +70,7 @@
             margin-top: 5px;
             font-size: 16px;
             font-family: $font-semi-bold;
+            width: 70%;
         }
 
         .uk-button {
@@ -63,6 +80,16 @@
             position: absolute;
             left: 40px;
             bottom: 35px;
+        }
+
+        @include hover {
+            .uk-button {
+                background-color: transparent;
+
+                &::before {
+                    transform: translateX(0);
+                }
+            }
         }
     }
 
@@ -86,6 +113,7 @@
 
         .uk-card {
             min-height: 310px;
+
             p {
                 font-size: 15px;
             }
@@ -111,13 +139,26 @@
         }
 
         .uk-card {
+            padding: 20px 10px 90px 25px;
             min-height: 280px;
+
             h3 {
-                font-size: 22px;
+                font-size: 20px;
+                padding: 0;
             }
 
             img {
-                width: 130px;
+                width: 118px;
+                max-width: 118px;
+            }
+
+            p {
+                width: 100%;
+            }
+
+            .uk-button {
+                bottom: 45px;
+                left: 25px;
             }
         }
     }

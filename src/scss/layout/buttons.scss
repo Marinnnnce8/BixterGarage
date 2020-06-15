@@ -46,7 +46,7 @@ input[type='submit'] {
 
 	>span {
 		top: 50%;
-		transform: translateY(-53%);
+		transform: translateY(-50%);
 		right: 30px;
 		color: inherit;
 
@@ -187,107 +187,3 @@ input[type='submit'] {
 		}
 	}
 }
-
-// .enquire-button {
-// 	position: fixed;
-// 	left: 0;
-// 	width: 100%;
-// 	bottom: 0;
-// 	z-index: 5;
-// 	border-radius: 0;
-// 	text-align: center;
-// 	font-size: 18px;
-
-// 	span {
-// 		transform: none;
-// 		right: auto;
-// 		margin-left: 18px;
-// 		position: relative;
-// 		top: 2px;
-// 	}
-// }
-
-// .scroll-button {
-// 	position: absolute;
-// 	left: 70px;
-// 	display: inline-block;
-// 	bottom: 0;
-// 	transform: translateY(50%);
-// 	width: 125px;
-// 	height: 125px;
-// 	z-index: 1;
-
-// 	&::after,
-// 	a,
-// 	a::before {
-// 		position: absolute;
-// 	}
-
-// 	&::after {
-// 		bottom: 0;
-// 		left: 50%;
-// 		transform: translate(-50%, -35%);
-// 		content: '';
-// 		height: 60px;
-// 		width: 118px;
-// 		border-radius: 0 0 90px 90px;
-// 		background-image: linear-gradient(to top, $blue, $blue, $blue, $blue, transparent);
-// 		z-index: 0;
-// 	}
-
-// 	a {
-// 		width: 80px;
-// 		height: 80px;
-// 		border-radius: 50%;
-// 		background-color: $green;
-// 		top: calc(50% - 22px);
-// 		left: 50%;
-// 		transform: translate(-50%, -50%);
-// 		z-index: 1;
-
-// 		&::before {
-// 			color: $white;
-// 			font-family: 'svgicons';
-// 			font-size: 26px;
-// 			top: 50%;
-// 			left: 50%;
-// 			transform: translate(-50%, -50%);
-// 			content: font-char($chevron-arrow-down);
-// 			z-index: 1;
-// 			transition: $nbSec ease-in-out;
-// 		}
-// 		@include hover {
-// 			text-decoration: none;
-// 			&::before {
-// 				transform: translate(-50%, -30%);
-// 			}
-// 		}
-// 	}
-
-// 	@media (max-width: $breakpointMediumMax) {
-// 		&::after {
-// 			transform: translate(-50%, -30%);
-// 		}
-// 		a {
-// 			transform: translate(-50%, -45%);
-// 		}
-// 	}
-// 	@media (max-width: $breakpointXsmallMax) {
-// 		width: 78px;
-// 		height: 78px;
-// 		left: 35px;
-// 		&::after {
-// 			background-image: linear-gradient(to top, $blue, $blue, $blue, $blue, transparent);
-// 			height: 39px;
-// 			width: 77px;
-// 		}
-// 		a {
-// 			width: 48px;
-// 			height: 48px;
-// 			transform: translate(-50%, -32%);
-// 			&::before {
-// 				font-size: 20px;
-// 			}
-// 		}
-// 	}
-// }

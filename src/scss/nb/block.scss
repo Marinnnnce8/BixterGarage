@@ -61,7 +61,7 @@
 			background: linear-gradient(to top, $black-transparent 0%, transparent 100%);
 			caption-side: bottom;
 			display: table-caption;
-			padding: 20px 30px 20px;
+			padding: 20px 30px 15px;
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -70,6 +70,7 @@
 			text-align: left;
 			z-index: 2;
 			font-size: 13px;
+			pointer-events: none;
 		}
 
 		.align_right {

@@ -56,31 +56,27 @@
         color: $gray-lightest;
         position: relative;
 
-        &::after,
-        &::before {
+        &::after {
             position: absolute;
             color: inherit;
-        }
-
-        &::before {
-            left: 0;
-            top: 50%;
-        }
-
-        &::after {
-            bottom: -10px;
+            bottom: 10px;
             height: 4px;
             content: '';
             background-color: $gray-lightest;
             transition: inherit;
         }
 
-        &.font-car {
-            padding-left: 57px;
+        &.car {
+            padding: 12px 0 23px 57px;
 
-            &::before {
-                font-size: 44px;
-                transform: translateY(-25%);
+            span {
+                left: 0;
+                top: 0;
+                position: absolute;
+                &::before {
+                    font-size: 44px;
+                    transform: translateY(20%);
+                }
             }
 
             &::after {
@@ -89,12 +85,17 @@
             }
         }
 
-        &.font-trailer {
-            padding-left: 70px;
+        &.trailer {
+            padding: 12px 0 23px 70px;
 
-            &::before {
-                font-size: 64px;
-                transform: translateY(-38%);
+            span {
+                left: 0;
+                top: 0;
+                position: absolute;
+                &::before {
+                    font-size: 70px;
+                    transform: translateY(-8%);
+                }
             }
 
             &::after {
@@ -148,6 +149,7 @@
     .uk-card-body {
         padding: 20px 20px 55px;
         background-color: $gray-dark;
+        transition: $nbSec ease-in-out;
 
         >span {
             color: $white;
@@ -166,6 +168,14 @@
 
             >span {
                 color: $white;
+            }
+        }
+    }
+
+    .uk-card {
+        @include hover {
+            .uk-card-body {
+                background-color: $gray-card;
             }
         }
     }
@@ -198,10 +208,9 @@
             font-family: 'svgicons';
             transition: inherit;
         }
+
         @include hover {
-            &::after {
-                color: $yellow;
-            }
+            background-color: $yellow;
         }
 
         &.uk-slidenav-previous {

@@ -1,3 +1,19 @@
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .nb-form-content {
+        width: 100%;
+    }
+    .newsletter-section form .uk-input {
+        height: 52px;
+        color: $black;
+        position: relative;
+        z-index: 100;
+    }
+    .uk-button-link {
+        @include hover {
+            &::after {
+                width: 90%;
+            }
+        }
+    }
 
 }
