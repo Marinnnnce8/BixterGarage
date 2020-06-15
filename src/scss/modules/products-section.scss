@@ -27,7 +27,7 @@
     }
 
     .uk-card {
-        padding: 25px 25px 85px 40px;
+        padding: 25px 25px 80px 40px;
 
         // min-height: 100%;
         h3 {
@@ -63,6 +63,62 @@
             position: absolute;
             left: 40px;
             bottom: 35px;
+        }
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+        padding-bottom: 110px;
+
+        .uk-container {
+            padding-left: 85px;
+            padding-right: 85px;
+        }
+
+        .uk-grid {
+            margin-top: -35px;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 25px;
+        }
+
+        .uk-card {
+            min-height: 310px;
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        padding-bottom: 40px;
+
+        .uk-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .uk-grid {
+            margin-top: -40px;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 15px;
+        }
+
+        .uk-card {
+            min-height: 280px;
+            h3 {
+                font-size: 22px;
+            }
+
+            img {
+                width: 130px;
+            }
         }
     }
 }
