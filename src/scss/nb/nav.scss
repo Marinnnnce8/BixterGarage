@@ -10,7 +10,7 @@
 // Prevents flicker while loading
 .uk-navbar-nav[data-uk-nb-nav] {
 	max-height: 80px;
-	// opacity: 0;
+	opacity: 0;
 
 	li {
 		padding: 0 15px;
@@ -22,8 +22,11 @@
 			text-transform: uppercase;
 			font-size: 13px;
 			font-weight: bold;
-			color: $white;
 			font-family: $font-default;
+			transition: $nbSec ease-in-out;
+		}
+		&.uk-active > a {
+			color: $gray;
 		}
 	}
 
@@ -82,6 +85,10 @@
 					min-width: 160px;
 					color: $black;
 					font-weight: bold;
+
+					@include hover {
+						transition: $nbSec ease-in-out;
+					}
 				}
 
 				span {
@@ -93,6 +100,19 @@
 					}
 				}
 			}
+			>a {
+				transition: $nbSec ease-in-out;
+				@include hover {
+					color: $gray;
+				}
+			}
+		}
+	}
+
+	.uk-navbar-dropdown-nav {
+		.uk-navbar-dropdown {
+			left: auto !important;
+			right: 50px !important;
 		}
 	}
 
@@ -125,7 +145,6 @@
 
 		.uk-navbar-dropdown {
 			background-color: $yellow-alt;
-			// margin-top: 0;
 			padding: 17px 14px 14px 0;
 			min-width: 250px;
 
@@ -149,6 +168,7 @@
 					@include hover {
 						text-decoration: none;
 						background-color: $yellow-dark;
+
 						&::before {
 							opacity: 1;
 						}
@@ -160,12 +180,11 @@
 
 	&.nb-nav-mobile {
 		background-color: $yellow-alt;
-		border-top: 1px solid $nbOffWhite;
-		height: calc(100% - 80px);
+		height: calc(100% - 70px);
 		left: 0;
 		overflow: auto;
 		position: fixed;
-		top: 80px;
+		top: 70px;
 		width: 100%;
 		z-index: 1001;
 
@@ -182,7 +201,34 @@
 		.uk-navbar-toggle {
 			display: block;
 			min-height: 0;
-			padding: 0;
+		}
+
+		.uk-navbar-nav>li:last-of-type {
+			display: none;
+		}
+
+		li a {
+			display: block;
+			position: relative;
+			padding: 10px 5px;
+
+			&.font-caret-right::before {
+				display: none;
+			}
+
+			&.font-caret-down::before {
+				content: font-char($caret-right);
+				bottom: auto;
+				left: auto;
+				right: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			@include hover {
+				text-decoration: none;
+				background-color: $yellow-dark;
+			}
 		}
 
 		.uk-navbar-dropdown {
@@ -205,8 +251,31 @@
 			}
 		}
 	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		.uk-navbar-nav {
+			padding: 20px;
+
+			>li>a {
+				padding: 5px;
+			}
+		}
+
+		.uk-navbar-dropdown-nav {
+			li:not(:first-of-type):not(:nth-of-type(2)) {
+				padding-left: 25px;
+			}
+
+			li:first-of-type {
+				a::before {
+					position: absolute;
+					left: -15px;
+					font-family: 'svgicons';
+					content: font-char($caret-left);
+					color: inherit;
+					font-size: inherit;
+				}
+			}
+		}
+	}
 }
-
-// .uk-navbar-dropdown-nav {
-
-// }

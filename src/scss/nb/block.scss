@@ -9,9 +9,11 @@
 
 .nb-form-container {
 	background-color: $gray-light;
+
 	@media (max-width: $breakpointMediumMax) {
 		padding: 40px 30px 45px;
 	}
+
 	@media (max-width: $breakpointXsmallMax) {
 		padding: 40px 25px;
 	}
@@ -287,9 +289,20 @@
 				margin: 0 $nbGutterXsmall;
 			}
 		}
+
 		@media (max-width: $breakpointMediumMax) {
 			.uk-container {
 				padding: 0;
+			}
+		}
+
+		@media (max-width: $breakpointXsmallMax) {
+			.nb-gallery-images .nb-gallery-row .nb-gallery-image {
+				border: 0.125rem solid transparent;
+			}
+
+			h3 {
+				padding: 0 15px;
 			}
 		}
 	}
@@ -379,6 +392,7 @@
 			width: 100%;
 		}
 	}
+
 	@media (max-width: $breakpointXsmallMax) {
 		label {
 			font-size: 14px;

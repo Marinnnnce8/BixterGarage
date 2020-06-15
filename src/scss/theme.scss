@@ -67,10 +67,22 @@ a:hover {
 
 // uikit/utility
 .uk-logo {
-
+	padding: 0;
 	img {
 		width: 280px;
 		height: auto;
+	}
+
+	@media (max-width: $breakpointMediumMax) {
+		img {
+			max-width: 220px;
+		}
+	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		img {
+			max-width: 165px;
+		}
 	}
 }
 
@@ -125,8 +137,9 @@ a:hover {
 .uk-checkbox:checked:not(.uk-form-danger),
 .uk-radio:checked:not(.uk-form-danger) {
 	border: 2px solid $nbBlack;
-	padding: 24px 20px;
+	padding: 11px 20px;
 	font-size: 16px;
+	min-height: 52px;
 	color: $gray-shade;
 	font-family: $font-default;
 }

@@ -10,41 +10,40 @@
 	<title>Bixter Garage | Styleguide</title>
 	<meta name='description' content='This is a meta description'>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-	<link rel="manifest" href="./favicon/site.webmanifest">
-	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
-	<link rel='shortcut icon' href='favicon.ico'>
+	<link rel='apple-touch-icon' sizes='180x180' href='./favicon/apple-touch-icon.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png'>
+	<link rel='manifest' href='./favicon/site.webmanifest'>
+	<link rel='mask-icon' href='./favicon/safari-pinned-tab.svg' color='#5bbad5'>
+	<meta name='msapplication-TileColor' content='#da532c'>
+	<meta name='theme-color' content='#ffffff'>
 	<link rel='stylesheet' href='css/uikit.min.css' />
 	<link rel='stylesheet' href='css/theme.min.css' />
 </head>
 
 <body>
 
-	<header class='header' data-uk-sticky='{"media":960,"animation":"uk-animation-slide-top","show-on-up":true}'>
+	<header class='header'>
 		<nav class='uk-navbar' data-uk-navbar>
-			<div class="navbar-top">
-				<div class="uk-container">
-					<div class="uk-flex uk-flex-right uk-flex-middle">
-						<ul class="uk-flex uk-flex-middle">
-							<li><a href="#" rel="noreferrer noopener" class="font-facebook"
-									aria-label="Click to visit our Facebook page"></a></li>
-							<li><a href="#" rel="noreferrer noopener" class="font-linkedin"
-									aria-label="Click to visit our Linkedin page"></a></li>
-							<li><a href="#" rel="noreferrer noopener" class="font-twitter"
-									aria-label="Click to visit our Twitter page"></a></li>
+			<div class='navbar-top'>
+				<div class='uk-container uk-container-large'>
+					<div class='uk-flex uk-flex-right uk-flex-middle'>
+						<ul class='uk-flex uk-flex-middle'>
+							<li><a href='#' rel='noreferrer noopener' class='font-facebook'
+									aria-label='Click to visit our Facebook page'></a></li>
+							<li><a href='#' rel='noreferrer noopener' class='font-linkedin'
+									aria-label='Click to visit our Linkedin page'></a></li>
+							<li><a href='#' rel='noreferrer noopener' class='font-twitter'
+									aria-label='Click to visit our Twitter page'></a></li>
 						</ul>
-						<a class="contact" href="tel:01595810303"><span class="font-phone">Call us</span><span>01595 810
+						<a class='contact' href='tel:01595810303'><span class='font-phone'>Call us</span><span>01595 810
 								303</span></a>
 					</div>
 				</div>
 			</div>
-			<div class="navbar-bottom">
-				<div class="uk-container">
-					<div class="uk-flex uk-flex-between">
+			<div class='navbar-bottom'>
+				<div class='uk-container uk-container-large'>
+					<div class='uk-flex uk-flex-start uk-flex-between'>
 						<div class='uk-navbar-left'>
 							<a href='#' class='uk-navbar-item uk-logo'>
 								<img src='img/logo.png' alt='Bixter Garage Logo'>
@@ -52,48 +51,61 @@
 						</div>
 
 						<div class='uk-navbar-right'>
-							<div id='nav'>
+							<div id='nav' class='nav'>
 								<ul class='uk-navbar-nav uk-flex-middle' data-uk-nb-nav>
-									<li><a href='index.html'>Home</a></li>
-									<li class="uk-visible@xl"><a href='#'>Services</a>
-										<ul class='uk-nav'>
-											<li class='uk-active'><a href='#'>Level 1 - Child 1</a></li>
-											<li><a href='#'>Level 1 - Child 2</a></li>
-											<li><a href='#'>Level 1 - Child 3</a></li>
-											<li><a href='#'>Level 1 - Child 4</a></li>
+									<li><a href='index.html' class='nb-open-lvl'>Home</a></li>
+									<li><a href='#' class='font-caret-down'>Services</a>
+										<ul class='uk-nav-dropdown'>
+											<li><a href='#' class='font-caret-right'>Groundworks</a></li>
+											<li><a href='#' class='font-caret-right'>Concrete structures</a></li>
+											<li><a href='#' class='font-caret-right'>Utilities</a></li>
 										</ul>
 									</li>
-									<li class="uk-visible@xl"><a href='#'>Sales</a>
-										<ul class='uk-nav'>
-											<li class='uk-active'><a href='#'>Level 1 - Child 1</a></li>
-											<li><a href='#'>Level 1 - Child 2</a></li>
-											<li><a href='#'>Level 1 - Child 3</a></li>
-											<li><a href='#'>Level 1 - Child 4</a></li>
+									<li><a href='#' class='nb-open-lvl font-caret-down'>Sales</a>
+										<ul class='uk-nav-dropdown'>
+											<li><a href='#' class='font-caret-right'>Groundworks</a></li>
+											<li><a href='#' class='font-caret-right'>Concrete structures</a></li>
+											<li><a href='#' class='font-caret-right'>Utilities</a></li>
 										</ul>
 									</li>
-									<li class="uk-visible@xl"><a href='#'>Products</a>
-										<ul class='uk-nav'>
-											<li class='uk-active'><a href='#'>Level 1 - Child 1</a></li>
-											<li><a href='#'>Level 1 - Child 2</a></li>
-											<li><a href='#'>Level 1 - Child 3</a></li>
-											<li><a href='#'>Level 1 - Child 4</a></li>
+									<li><a href='#' class='nb-open-lvl font-caret-down'>Products</a>
+										<ul class='uk-nav-dropdown'>
+											<li><a href='#' class='font-caret-right'>Products 1</a></li>
+											<li><a href='#' class='font-caret-right'>Products 2</a></li>
+											<li><a href='#' class='font-caret-right'>Products 3</a></li>
 										</ul>
 									</li>
-									<li class='uk-active uk-visible@xl'><a href='styleguide.html'>About Us</a></li>
-									<li class='uk-hidden@xl'><button class='font-down-arrow'>More</button>
-										<ul data-uk-dropdown='mode: click'>
-											<li><a href='styleguide.html'>Home</a></li>
-											<li><a href='styleguide.html'>Booking Info</a></li>
-											<li><a href='styleguide.html'>About Orkney</a></li>
-											<li><a href='styleguide.html'>Contact</a></li>
+									<li><a href='#'>About Us</a></li>
+									<li>
+										<a href='#' class='font-caret-down'>More</a>
+										<ul class='uk-nav-dropdown'>
+											<li><a href='#' class='font-caret-right'>Home</a></li>
+											<li>
+												<a href='#' class='font-caret-right'>Products</a>
+												<div>
+													<ul class='uk-nav uk-dropdown-nav'>
+														<li>
+															<a href='#' class='font-caret-right'>Products 1</a>
+														</li>
+														<li>
+															<a href='#' class='font-caret-right'>Products 2</a>
+														</li>
+														<li>
+															<a href='#' class='font-caret-right'>Products 3</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li><a href='#' class='font-caret-right'>About Us</a></li>
 										</ul>
 									</li>
-									<li><a href='styleguide.html' class="uk-button uk-button-primary">Contact Us<span
-												role="presentation"></span></a>
+									<li><a href='#' class='uk-button uk-button-primary'>Contact Us<span
+												role='presentation'></span></a>
 									</li>
 								</ul>
 							</div>
-							<a href='#nav' class='uk-navbar-toggle' aria-label="Open navigation menu"
+							<a href='#' class='uk-hidden@s font-mail' aria-label='Contact Us'></a>
+							<a href='#nav' class='uk-navbar-toggle' aria-label='Open navigation menu'
 								data-uk-toggle='{"animation": "uk-animation-slide-left"}' hidden>
 								<span data-uk-navbar-toggle-icon></span>
 							</a>
@@ -105,14 +117,14 @@
 	</header>
 
 	<main class='nb-main uk-margin-large-bottom'>
-		<div class="banner-internal uk-background-cover" data-uk-img
+		<div class='banner-internal uk-background-cover' data-uk-img
 			style="background-image: url('./img/banner-internal.jpg');">
-			<div class="uk-container">
-				<div class="banner-internal-content uk-text-center">
+			<div class='uk-container'>
+				<div class='banner-internal-content uk-text-center'>
 					<h1>Standard <span>Internal Page</span></h1>
-					<ul class="uk-breadcrumb uk-flex-center">
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="">Category</a></li>
+					<ul class='uk-breadcrumb uk-flex-center'>
+						<li><a href='./index.html'>Home</a></li>
+						<li><a href='#'>Category</a></li>
 						<li><span>standard internal page with style guide</span></li>
 					</ul>
 				</div>
@@ -129,21 +141,21 @@
 						italic text</em>. Nulla facilisi. In in turpis non eros vehicula adipiscing in
 					<em><strong>feugiat ligula</strong></em>. Vivamus et nulla<sub>2</sub> ultricies<sup>2</sup>, auctor
 					tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at
-					euismod dui. Duis at eros magna <a href="#">example link</a>. Pellentesque nec porttitor dui. Etiam
+					euismod dui. Duis at eros magna <a href='#'>example link</a>. Pellentesque nec porttitor dui. Etiam
 					sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
 
-				<figure class="align_center hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-castle-banner.jpg">
-						<img alt="This is a centre aligned image" src="./img/center-img.jpg" width="960" />
+				<figure class='align_center hidpi'>
+					<a href='https://aws.nbcommunication.com/template/img/placeholder-castle-banner.jpg'>
+						<img data-uk-img alt='This is a centre aligned image' src='./img/center-img.jpg' width='960' />
 					</a>
 					<figcaption>A center-aligned image with a caption.</figcaption>
 				</figure>
 
 				<h2>Heading 2 <b>Black</b></h2>
 
-				<figure class="align_left hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-city.jpg">
-						<img alt="This is a left aligned image" src="./img/img-left.jpg" width="300" />
+				<figure class='align_left hidpi'>
+					<a href='https://aws.nbcommunication.com/template/img/placeholder-city.jpg'>
+						<img data-uk-img alt='This is a left aligned image' src='./img/img-left.jpg' width='300' />
 					</a>
 					<figcaption>This is a left-aligned image</figcaption>
 				</figure>
@@ -158,9 +170,9 @@
 					vestibulum sodales porttitor. Donec a luctus nisi. Donec facilisis, elit vitae blandit accumsan,
 					orci odio ornare libero, sed mollis urna magna nec mi.</p>
 
-				<figure class="align_right hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-columns.jpg">
-						<img alt="This is a right aligned image" src="./img/img-right.jpg" width="300" />
+				<figure class='align_right hidpi'>
+					<a href='https://aws.nbcommunication.com/template/img/placeholder-columns.jpg'>
+						<img data-uk-img alt='This is a right aligned image' src='./img/img-right.jpg' width='300' />
 					</a>
 					<figcaption>This is a right-aligned image</figcaption>
 				</figure>
@@ -171,8 +183,8 @@
 				<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in
 					feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam.</p>
 
-				<p>Pellentesque ut sollicitudin ante. This is an <a href="https://www.google.com/" target="_blank"
-						rel="noreferrer noopener">external link</a>. Donec vel adipiscing sapien, at euismod dui. Duis
+				<p>Pellentesque ut sollicitudin ante. This is an <a href='https://www.google.com/' target='_blank'
+						rel='noreferrer noopener'>external link</a>. Donec vel adipiscing sapien, at euismod dui. Duis
 					at eros magna example link. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent
 					rutrum arcu eget tortor cursus rutrum.</p>
 
@@ -195,25 +207,25 @@
 					nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel
 					adipiscing sapien, at euismod dui.</p>
 
-				<h4>Heading 4 <span class="light">Light</span></h4>
+				<h4>Heading 4 <span class='light'>Light</span></h4>
 
 				<p>Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam,
 					ipsa ab illo veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
 				<ul>
-					<li>PDF File - <a href="https://aws.nbcommunication.com/template/files/test.pdf">Download now!</a>
+					<li>PDF File - <a href='#'>Download now!</a>
 					</li>
 					<li>Word Document</li>
 					<li>Excel Spreadsheet</li>
 					<li>Powerpoint Presentation</li>
 				</ul>
 
-				<h4>Heading 4 <span class="light">Light</span></h4>
+				<h4>Heading 4 <span class='light'>Light</span></h4>
 
 				<p>Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam,
 					ipsa ab illo veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
-				<ul class="uk-list-secondary">
+				<ul class='uk-list-secondary'>
 					<li>A non linked list ipsum dolor sit amet, consectetur
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 					</li>
@@ -225,22 +237,22 @@
 					</li>
 				</ul>
 
-				<h4>Heading 4 <span class="light">Light</span></h4>
+				<h4>Heading 4 <span class='light'>Light</span></h4>
 
 				<p>Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam,
 					ipsa ab illo veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
-				<ol class="uk-list-decimal">
-					<li><a href="#">A list of ordered links</a> - a link with some further text</li>
-					<li><a href="#">A list of ordered links</a></li>
-					<li><a href="#">A list of ordered links</a></li>
+				<ol class='uk-list-decimal'>
+					<li><a href='#'>A list of ordered links</a> - a link with some further text</li>
+					<li><a href='#'>A list of ordered links</a></li>
+					<li><a href='#'>A list of ordered links</a></li>
 				</ol>
 			</div>
 		</div>
 
 		<div class='nb-block nb-block-gallery uk-clearfix' data-nb-block='gallery'>
 			<div class='uk-container uk-container-small uk-margin-bottom'>
-				<h3>Heading 3 <span class="light">Light</span></h3>
+				<h3>Heading 3 <span class='light'>Light</span></h3>
 			</div>
 			<div class='uk-container uk-container-large uk-margin-large-bottom'>
 				<div class='nb-gallery-images' data-uk-lightbox='{"animation":"fade"}'
@@ -286,7 +298,7 @@
 
 				<h3>Heading 3 <span class='light'>Light</span></h3>
 
-				<table class="nb-table">
+				<table>
 					<thead>
 						<tr>
 							<th>Main Column 1</th>
@@ -298,28 +310,28 @@
 					</thead>
 					<tbody>
 						<tr>
-							<th>Title Name 1</th>
+							<td>Title Name 1</td>
 							<td>Lorem</td>
 							<td>&pound;99.99</td>
 							<td>Lorem</td>
 							<td>07:00 - 23:00</td>
 						</tr>
 						<tr>
-							<th>Title Name 2</th>
+							<td>Title Name 2</td>
 							<td>Lorem</td>
 							<td>&pound;99.99</td>
 							<td>Lorem</td>
 							<td>07:00 - 23:00</td>
 						</tr>
 						<tr>
-							<th>Title Name 3</th>
+							<td>Title Name 3</td>
 							<td>Lorem</td>
 							<td>&pound;99.99</td>
 							<td>Lorem</td>
 							<td>07:00 - 23:00</td>
 						</tr>
 						<tr>
-							<th>Title Name 4</th>
+							<td>Title Name 4</td>
 							<td>Lorem</td>
 							<td>&pound;99.99</td>
 							<td>Lorem</td>
@@ -328,7 +340,7 @@
 					</tbody>
 				</table>
 
-				<p class="uk-text-small">*This is some small text</p>
+				<p class='uk-text-small'>*This is some small text</p>
 
 			</div>
 
@@ -336,33 +348,33 @@
 
 				<h3>Buttons</h3>
 
-				<div class="uk-grid-medium uk-child-width-1-3@s uk-grid" data-uk-grid>
-					<div class="uk-first-column">
-						<div class="uk-text-meta uk-form-label">Large button</div>
-						<button type="button" class="uk-button uk-button-primary">View all listings
+				<div class='uk-grid-medium uk-child-width-1-3@s uk-grid' data-uk-grid>
+					<div class='uk-first-column'>
+						<div class='uk-text-meta uk-form-label'>Large button</div>
+						<button type='button' class='uk-button uk-button-primary'>View all listings
 							<span role='presentation'></span></button>
 					</div>
 					<div>
-						<div class="uk-text-meta uk-form-label">Large button default</div>
-						<button type="button" class="uk-button uk-button-secondary">View all listings<span
+						<div class='uk-text-meta uk-form-label'>Large button default</div>
+						<button type='button' class='uk-button uk-button-secondary'>View all listings<span
 								role='presentation'></span></button>
 					</div>
 					<div>
-						<div class="uk-text-meta uk-form-label">Ghost button</div>
-						<button type="button" class="uk-button uk-button-default">View all listings<span
+						<div class='uk-text-meta uk-form-label'>Ghost button</div>
+						<button type='button' class='uk-button uk-button-default'>View all listings<span
 								role='presentation'></span></button>
 					</div>
 				</div>
-				<div class="uk-grid-medium uk-child-width-1-3@s uk-grid" data-uk-grid="">
-					<div class="uk-margin-bottom">
-						<div class="uk-text-meta uk-form-label">Textual Button</div>
-						<button type="button" class="uk-button uk-button-text">View all listings</button>
+				<div class='uk-grid-medium uk-child-width-1-3@s uk-grid' data-uk-grid>
+					<div class='uk-margin-bottom'>
+						<div class='uk-text-meta uk-form-label'>Textual Button</div>
+						<button type='button' class='uk-button uk-button-text'>View all listings</button>
 					</div>
 				</div>
-				<div class="uk-grid-medium uk-child-width-1-3@s uk-grid" data-uk-grid="">
+				<div class='uk-grid-medium uk-child-width-1-3@s uk-grid' data-uk-grid>
 					<div>
-						<div class="uk-text-meta uk-form-label">Textual Underlined Button</div>
-						<button type="button" class="uk-button uk-button-text uk-button-link">View all listings</button>
+						<div class='uk-text-meta uk-form-label'>Textual Underlined Button</div>
+						<button type='button' class='uk-button uk-button-text uk-button-link'>View all listings</button>
 					</div>
 				</div>
 
@@ -376,9 +388,9 @@
 		</div>
 
 		<div class='nb-block nb-block-form uk-clearfix' data-nb-block='form'>
-			<div class="uk-container">
-				<div class="nb-form-container uk-padding-large">
-					<div class="uk-container uk-container-small">
+			<div class='uk-container'>
+				<div class='nb-form-container uk-padding-large'>
+					<div class='uk-container uk-container-small'>
 						<form id='nb-form-nb-styleguide' class='uk-form-stacked InputfieldForm' method='post'
 							data-uk-nb-form novalidate data-colspacing='1'>
 
@@ -445,58 +457,58 @@
 
 	
 	<footer class='footer'>
-		<div class="footer-top">
-			<div class="uk-container">
-				<a href="#"><img src="./img/logo.png" alt="Bixter Garage Logo"></a>
-				<div data-uk-grid class="uk-child-width-1-4@l uk-child-width-1-2@s">
-					<div class="footer-box">
-						<span class="uk-text-uppercase">Adrress</span>
+		<div class='footer-top'>
+			<div class='uk-container'>
+				<a href='#'><img src='./img/logo.png' alt='Bixter Garage Logo'></a>
+				<div data-uk-grid class='uk-child-width-1-4@l uk-child-width-1-2@s'>
+					<div class='footer-box'>
+						<span class='uk-text-uppercase'>Adrress</span>
 						<ul>
 							<li><b>Bixter Garage Ltd</b></li>
 							<li>Bixter Shetland Scotland</li>
 							<li>ZE2 9NA</li>
 						</ul>
 					</div>
-					<div class="footer-box">
-						<span class="uk-text-uppercase">Main contact</span>
+					<div class='footer-box'>
+						<span class='uk-text-uppercase'>Main contact</span>
 						<ul>
-							<li>Tel. <a href="tel:01595810303">01595810303</a></li>
-							<li>Email. <a href="mailto:mail@bixtergarage.co.uk">mail@bixtergarage.co.uk</a></li>
+							<li>Tel. <a href='tel:01595810303'>01595810303</a></li>
+							<li>Email. <a href='mailto:mail@bixtergarage.co.uk'>mail@bixtergarage.co.uk</a></li>
 						</ul>
-						<div class="footer-box">
-							<span class="uk-text-uppercase">Connect with us</span>
-							<ul class="uk-flex social">
-								<li><a href="#" aria-label="Visit our Facebook page" class="font-facebook"></a></li>
-								<li><a href="#" aria-label="Visit our Twitter page" class="font-twitter"></a></li>
+						<div class='footer-box'>
+							<span class='uk-text-uppercase'>Connect with us</span>
+							<ul class='uk-flex social'>
+								<li><a href='#' aria-label='Visit our Facebook page' class='font-facebook'></a></li>
+								<li><a href='#' aria-label='Visit our Twitter page' class='font-twitter'></a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="footer-box">
-						<span class="uk-text-uppercase">Contact Sales</span>
+					<div class='footer-box'>
+						<span class='uk-text-uppercase'>Contact Sales</span>
 						<ul>
 							<li><b>Martin:</b></li>
-							<li>Tel. <a href="tel:07507489831">07507489831</a></li>
-							<li>Email. <a href="mailto:martin@bixtergarage.co.uk">martin@bixtergarage.co.uk</a></li>
+							<li>Tel. <a href='tel:07507489831'>07507489831</a></li>
+							<li>Email. <a href='mailto:martin@bixtergarage.co.uk'>martin@bixtergarage.co.uk</a></li>
 						</ul>
 						<ul>
 							<li><b>Robbie:</b></li>
-							<li>Tel. <a href="tel:07788209598">07788209598</a></li>
-							<li>Email. <a href="mailto:robbie@bixtergarage.co.uk">robbie@bixtergarage.co.uk</a></li>
+							<li>Tel. <a href='tel:07788209598'>07788209598</a></li>
+							<li>Email. <a href='mailto:robbie@bixtergarage.co.uk'>robbie@bixtergarage.co.uk</a></li>
 						</ul>
 					</div>
-					<div class="footer-newsletter">
+					<div class='footer-newsletter'>
 						<div>
-							<span class="uk-text-uppercase">Newsletter</span>
-							<a href="#" class="uk-button uk-button-primary"><span role="presentation"></span>Sign up
+							<span class='uk-text-uppercase'>Newsletter</span>
+							<a href='#' class='uk-button uk-button-primary'><span role='presentation'></span>Sign up
 								here</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom">
+		<div class='footer-bottom'>
 			<div class='uk-container'>
-				<div class="uk-flex uk-flex-between uk-flex-middle">
+				<div class='uk-flex uk-flex-between uk-flex-middle'>
 					<div class='nb-copyright'>Copyright &copy; 2020 Bixters Garage
 					</div>
 

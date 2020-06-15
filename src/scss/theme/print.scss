@@ -1,4 +1,12 @@
 @media print {
+
+	.banner,
+	.banner-internal,
+	.newsletter-section,
+	.nb-gallery-images,
+	.listings-nav,
+	.uk-slidenav-container,
+	.products-section img,
 	.header,
 	.footer,
 	.nb-block-form,
@@ -8,5 +16,19 @@
 	.uk-pagination,
 	.uk-modal {
 		display: none !important;
+	}
+
+	.listings-section,
+	.services-section,
+	.about-section,
+	.products-section,
+	.products-section .uk-card-body {
+		padding: 0 !important;
+		min-height: 0 !important;
+	}
+
+	.listings-inner,
+	.products-section .uk-grid {
+		margin-top: 20px;
 	}
 }

@@ -13,30 +13,30 @@
 			color: $white;
 			font-weight: bold;
 			text-transform: uppercase;
-			padding: 18px 35px 19px 20px;
+			padding: 18px 15px 19px 20px;
 		}
 	}
 
 	tbody {
 
-		tr th,
 		tr td:not(:last-of-type) {
 			border-right: 3px solid $gray-darker;
 		}
 
-		th,
+		td:first-of-type,
 		td {
 			color: $gray-dark;
 			font-family: $font-light;
 		}
 
-		th {
+		td:first-of-type {
 			background-color: $blue;
 			font-weight: normal;
 			font-size: 16px;
 			text-align: left;
 			text-transform: none;
-			padding: 16px 45px 15px 28px;;
+			padding: 16px 15px 15px 28px;
+			;
 		}
 
 		td {
@@ -50,6 +50,7 @@
 
 		.uk-active {
 			background-color: #f5f5f5;
+			color: $nbBlack;
 		}
 
 		thead {

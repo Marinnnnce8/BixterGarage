@@ -3,13 +3,14 @@
     left: 0;
     width: 100%;
     z-index: 100;
+
     .uk-navbar {
         flex-direction: column;
     }
 
     .navbar-top {
         background-color: $gray-darkest;
-        padding: 5px 0 12px;
+        padding: 2px 0 8px;
 
         ul {
             padding: 5px 0 0;
@@ -18,6 +19,7 @@
 
         li {
             height: 28px;
+
             &:not(:first-of-type) {
                 margin-left: 6px;
             }
@@ -67,29 +69,98 @@
                     &::before {
                         position: absolute;
                         left: 0;
-                        top: 40%;
+                        top: 50%;
                         transform: translateY(-50%);
+                        font-size: 12px;
                     }
                 }
+
                 &:last-of-type {
                     display: block;
                     font-weight: bold;
                     transition: $nbSec ease-in-out;
                 }
             }
+
             @include hover {
                 text-decoration: none;
+
                 span:last-of-type {
                     color: $yellow;
                 }
             }
         }
     }
+
     .navbar-bottom {
         padding: 20px 0;
-        
-		.uk-navbar-item {
-			min-height: 0;
-		}
+
+        .uk-navbar-item {
+            min-height: 0;
+        }
+    }
+
+    .uk-navbar-toggle,
+    .font-mail {
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+        min-height: 35px;
+        background-color: $gray-mid;
+        color: $white;
+        padding: 0;
+
+        &.uk-navbar-toggle {
+            z-index: 1002;
+            svg {
+                color: $white;
+                width: 15px;
+            }
+        }
+
+        &.font-mail {
+            background-color: $yellow;
+            margin-right: 4px;
+            position: relative;
+
+            &::before {
+                color: $gray-darkest;
+                font-size: 18px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+
+        .navbar-top,
+        .navbar-bottom {
+            >.uk-container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .navbar-bottom {
+            padding: 13px 0;
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+
+        .navbar-top,
+        .navbar-bottom {
+            >.uk-container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        .uk-flex-right {
+            justify-content: space-between;
+        }
     }
 }

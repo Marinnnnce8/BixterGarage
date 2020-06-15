@@ -44,6 +44,7 @@
 }
 
 .listings-nav {
+    margin-bottom: 40px;
     padding-left: 0;
 
     li:not(:first-of-type) {
@@ -73,6 +74,7 @@
                 left: 0;
                 top: 0;
                 position: absolute;
+
                 &::before {
                     font-size: 44px;
                     transform: translateY(20%);
@@ -92,6 +94,7 @@
                 left: 0;
                 top: 0;
                 position: absolute;
+
                 &::before {
                     font-size: 70px;
                     transform: translateY(-8%);
@@ -119,6 +122,9 @@
         &::after {
             background-color: $yellow;
         }
+    }
+    @media (max-width: $breakpointMediumMax) {
+        margin-bottom: 35px;
     }
 }
 
@@ -263,6 +269,15 @@
             >* {
                 padding-left: 0;
             }
+        }
+
+        .uk-slidenav-container {
+            position: relative;
+            right: auto;
+            top: auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
         .uk-card-media {
