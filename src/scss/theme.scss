@@ -16,11 +16,7 @@
 @import 'layout/forms.scss';
 
 // UIkit
-@import "uikit/base.scss";
-@import "uikit/utility.scss";
-@import "uikit/navbar.scss";
 @import "uikit/breadcrumb.scss";
-@import "uikit/form.scss";
 
 // NB
 @import "nb/nav.scss";
@@ -83,54 +79,6 @@ a:hover {
 	@media (max-width: $breakpointXsmallMax) {
 		img {
 			max-width: 165px;
-		}
-	}
-}
-
-// uikit/breadcrumb
-.uk-breadcrumb {
-	margin-top: 10px;
-
-	* {
-		text-transform: uppercase;
-		color: $white;
-		font-size: 12.25px;
-	}
-
-	>:nth-child(n+2):not(.uk-first-column)::before {
-		content: font-char($caret-right);
-		font-family: 'svgicons';
-		font-size: inherit;
-		color: inherit;
-		margin: 0 15px;
-	}
-
-	a {
-		border-bottom: 1px solid $white;
-
-		@include hover {
-			color: $yellow-light;
-		}
-	}
-
-	> :last-child>*,
-	> :last-child>span {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		display: inline-block;
-		vertical-align: middle;
-		color: $yellow;
-		font-family: $font-bold;
-
-		@media (max-width: $breakpointXsmallMax) {
-			max-width: 128px;
-		}
-	}
-
-	@media (max-width: $breakpointXsmallMax) {
-		li:not(:first-of-type):not(:last-of-type) {
-			display: none;
 		}
 	}
 }

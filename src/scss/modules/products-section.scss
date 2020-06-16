@@ -2,14 +2,7 @@
     padding-bottom: 230px;
 
     h2 {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
+        @include visually-hidden;
     }
 
     .uk-grid {
@@ -27,6 +20,7 @@
     }
 
     .uk-card {
+        background-color: $gray;
         &::after {
             position: absolute;
             left: 0;
