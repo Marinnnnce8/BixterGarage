@@ -22,11 +22,8 @@
 			text-transform: uppercase;
 			font-size: 13px;
 			font-weight: bold;
-			font-family: $font-default;
+			font-family: $font-semi-bold;
 			transition: $nbSec ease-in-out;
-		}
-		&.uk-active > a {
-			color: $gray;
 		}
 	}
 
@@ -100,12 +97,6 @@
 					}
 				}
 			}
-			>a {
-				transition: $nbSec ease-in-out;
-				@include hover {
-					color: $gray;
-				}
-			}
 		}
 	}
 
@@ -119,6 +110,13 @@
 	&.nb-nav-desktop {
 
 		.uk-navbar-nav {
+			>li>a:not(.uk-button) {
+				transition: $nbSec ease-in-out;
+
+				@include hover {
+					color: $yellow-active;
+				}
+			}
 
 			>.uk-parent {
 
@@ -140,6 +138,9 @@
 						}
 					}
 				}
+			}
+			.uk-active>a {
+				color: $yellow-active;
 			}
 		}
 
@@ -187,12 +188,16 @@
 		top: 70px;
 		width: 100%;
 		z-index: 1001;
+		padding-top: 50px;
 
 		.uk-navbar-nav {
 			display: block;
 
 			>li {
-				padding: $ukGutter $ukGutter 0;
+				padding: 0 $ukGutter $ukGutter;
+				>a {
+					padding: 5px;
+				}
 			}
 		}
 
@@ -236,7 +241,7 @@
 			box-shadow: none;
 			height: 100%;
 			left: 0 !important;
-			padding: $ukGutter;
+			padding: 35px $ukGutter $ukGutter;
 			top: 0 !important;
 			width: 100%;
 
@@ -250,17 +255,6 @@
 				margin-top: 1em;
 			}
 		}
-	}
-
-	@media (max-width: $breakpointXsmallMax) {
-		.uk-navbar-nav {
-			padding: 20px;
-
-			>li>a {
-				padding: 5px;
-			}
-		}
-
 		.uk-navbar-dropdown-nav {
 			li:not(:first-of-type):not(:nth-of-type(2)) {
 				padding-left: 25px;

@@ -14,20 +14,10 @@
 
     @media (max-width: $breakpointMediumMax) {
         padding: 100px 0 95px;
-
-        >.uk-container {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
     }
 
     @media (max-width: $breakpointXsmallMax) {
         padding: 65px 0 70px;
-
-        >.uk-container {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
     }
 }
 
@@ -68,6 +58,9 @@
     }
 
     @media (max-width: $breakpointXsmallMax) {
+        padding-left: 20px;
+        padding-right: 20px;
+
         p {
             font-size: 22px;
         }

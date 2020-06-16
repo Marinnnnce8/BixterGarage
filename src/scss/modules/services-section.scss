@@ -1,5 +1,5 @@
 .services-section {
-    padding: 130px 0;
+    padding: 135px 0 130px;
     min-height: 515px;
 
     h2 {
@@ -13,10 +13,18 @@
         width: 1px;
     }
 
+    .uk-grid {
+        margin-left: -45px;
+    }
+
+    .uk-grid>* {
+        padding-left: 45px;
+    }
+
     .services-container {
         .services-box {
             box-shadow: 0 -1px 28px -6px rgba($black, .3);
-            padding: 45px 45px 45px 120px;
+            padding: 45px 65px 45px 120px;
             color: $gray-dark;
             position: relative;
             transition: $nbSec ease-in-out;
@@ -33,6 +41,9 @@
                 display: inline-block;
                 position: relative;
                 margin: 0;
+                span:not(.font-chevron-right) {
+                    font-family: $font-default;
+                }
             }
 
             .font-chevron-right {
@@ -81,11 +92,6 @@
     @media (max-width: $breakpointXsmallMax) {
         padding: 60px 0 65px;
 
-        >.uk-container {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
         *+.uk-grid-margin,
         .uk-grid+.uk-grid,
         .uk-grid>.uk-grid-margin {
@@ -93,7 +99,7 @@
         }
 
         .services-container .services-box {
-            padding: 95px 18px 50px 27px;
+            padding: 90px 18px 25px 27px;
 
             &::before {
                 font-size: 34px;

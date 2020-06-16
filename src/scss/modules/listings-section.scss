@@ -52,10 +52,11 @@
     }
 
     button {
-        font-weight: bold;
         font-size: 13px;
         color: $gray-lightest;
         position: relative;
+        font-family: $font-bold;
+        letter-spacing: 1.1px;
 
         &::after {
             position: absolute;
@@ -123,8 +124,49 @@
             background-color: $yellow;
         }
     }
+
     @media (max-width: $breakpointMediumMax) {
         margin-bottom: 35px;
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        margin-bottom: 20px;
+
+        button {
+            font-size: 12px;
+
+            &::after {
+                bottom: 15px;
+            }
+
+            &.car {
+                padding: 12px 0 23px 40px;
+
+                &::after {
+                    left: 40px;
+                    width: calc(100% - 40px);
+                }
+
+                span::before {
+                    font-size: 34px;
+                    transform: translateY(28%);
+                }
+            }
+
+            &.trailer {
+                padding: 12px 0 23px 50px;
+
+                &::after {
+                    left: 52px;
+                    width: calc(100% - 52px);
+                }
+
+                span::before {
+                    font-size: 52px;
+                    transform: translateY(0%);
+                }
+            }
+        }
     }
 }
 
@@ -189,7 +231,7 @@
     .uk-slidenav-container {
         right: 0;
         position: absolute;
-        top: -65px;
+        top: -90px;
     }
 
     .uk-slidenav {
@@ -259,6 +301,10 @@
             h3 {
                 font-size: 17px;
             }
+        }
+
+        .uk-slidenav-container {
+            top: -80px;
         }
     }
 

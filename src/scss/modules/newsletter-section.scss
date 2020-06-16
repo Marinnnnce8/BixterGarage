@@ -38,6 +38,7 @@
 
     h2 {
         color: $gray-dark;
+        font-family: $font-default;
         font-size: 30px;
 
         span {
@@ -104,11 +105,6 @@
         &::after {
             width: 500px;
             height: 500px;
-        }
-
-        >.uk-container {
-            padding-left: 40px;
-            padding-right: 40px;
         }
 
         .newsletter-box {

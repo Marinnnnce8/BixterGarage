@@ -68,6 +68,7 @@ a:hover {
 // uikit/utility
 .uk-logo {
 	padding: 0;
+
 	img {
 		width: 280px;
 		height: auto;
@@ -126,6 +127,12 @@ a:hover {
 			max-width: 128px;
 		}
 	}
+
+	@media (max-width: $breakpointXsmallMax) {
+		li:not(:first-of-type):not(:last-of-type) {
+			display: none;
+		}
+	}
 }
 
 // uikit/form
@@ -155,5 +162,45 @@ a:hover {
 
 	@media (max-width: $breakpointMobile) {
 		font-size: 0.8rem;
+	}
+}
+
+.about-section,
+.banner,
+.listings-section,
+.nb-main {
+	@media (max-width: $breakpointMediumMax) {
+		.uk-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.nb-block-form>.uk-container {
+			padding-left: 20px;
+			padding-right: 20px;
+
+			.uk-container {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.about-section,
+.banner,
+.listings-section,
+.products-section,
+.services-section,
+.nb-main {
+	@media (max-width: $breakpointXsmallMax) {
+		.uk-container {
+			padding-left: 13px;
+			padding-right: 13px;
+		}
+
+		.nb-block-form>.uk-container {
+			padding-left: 13px;
+			padding-right: 13px;
+		}
 	}
 }

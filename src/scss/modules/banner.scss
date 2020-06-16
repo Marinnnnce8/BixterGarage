@@ -2,7 +2,8 @@
 //------------------------------------------------------------------------------
 .banner {
 	margin-bottom: 20px;
-	min-height: 815px;
+	margin-top: 70px;
+	min-height: 745px;
 	position: relative;
 	overflow: hidden;
 
@@ -35,11 +36,6 @@
 		&::after {
 			transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 64%, 0);
 		}
-
-		.uk-container {
-			padding-left: 40px;
-			padding-right: 40px;
-		}
 	}
 
 	@media (max-width: $breakpointXsmallMax) {
@@ -48,11 +44,6 @@
 		&::after {
 			transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 51deg) translate3d(0, 52%, 0);
 			bottom: -10%;
-		}
-
-		.uk-container {
-			padding-left: 15px;
-			padding-right: 15px;
 		}
 	}
 }
