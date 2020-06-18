@@ -2370,8 +2370,10 @@ if(typeof UIkit === "undefined") {
 						test.style.position = "absolute";
 						test.style.left = "-99in";
 						test.style.whiteSpace = "nowrap";
-						test.style.font = window.getComputedStyle(a, null).getPropertyValue("font");
-						test.style.padding = window.getComputedStyle(a, null).getPropertyValue("padding");
+						test.style.fontFamily = window.getComputedStyle(a, null).getPropertyValue("font-family");
+						test.style.fontSize = window.getComputedStyle(a, null).getPropertyValue("font-size");
+						test.style.paddingLeft = window.getComputedStyle(a, null).getPropertyValue("padding-left");
+						test.style.paddingRight = window.getComputedStyle(a, null).getPropertyValue("padding-right");
 						test.innerHTML = a.textContent;
 
 						document.body.appendChild(test);
