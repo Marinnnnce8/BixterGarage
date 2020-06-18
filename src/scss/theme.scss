@@ -76,6 +76,12 @@ a:hover {
 		}
 	}
 
+	@media (max-width: $breakpointMedium) {
+		img {
+			max-width: 175px;
+		}
+	}
+
 	@media (max-width: $breakpointXsmallMax) {
 		img {
 			max-width: 165px;

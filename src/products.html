@@ -52,8 +52,9 @@
 
 						<div class='uk-navbar-right'>
 							<div id='nav' class='nav'>
-								<ul class='uk-navbar-nav uk-flex-middle' data-uk-nb-nav>
-									<li class='uk-active'><a href='index.html' class='nb-open-lvl'>Home</a></li>
+								<ul class='uk-navbar-nav uk-flex-middle' data-uk-nb-nav='breakpoint:640'>
+									<li class='uk-active uk-visible@l'><a href='index.html' class='nb-open-lvl'>Home</a>
+									</li>
 									<li><a href='#' class='font-caret-down'>Services</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Groundworks</a></li>
@@ -68,15 +69,16 @@
 											<li><a href='#' class='font-caret-right'>Utilities</a></li>
 										</ul>
 									</li>
-									<li><a href='#' class='nb-open-lvl font-caret-down'>Products</a>
+									<li class='uk-visible@l'><a href='#'
+											class='nb-open-lvl font-caret-down'>Products</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Products 1</a></li>
 											<li><a href='#' class='font-caret-right'>Products 2</a></li>
 											<li><a href='#' class='font-caret-right'>Products 3</a></li>
 										</ul>
 									</li>
-									<li><a href='#'>About Us</a></li>
-									<li>
+									<li class='uk-visible@l'><a href='#'>About Us</a></li>
+									<li class='uk-hidden@l uk-visible@s'>
 										<a href='#' class='font-caret-down'>More</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Home</a></li>
@@ -104,7 +106,7 @@
 									</li>
 								</ul>
 							</div>
-							<a href='#' class='uk-hidden@s font-mail' aria-label='Contact Us'></a>
+							<a href='#' class='font-mail' aria-label='Contact Us'></a>
 							<a href='#nav' class='uk-navbar-toggle' aria-label='Open navigation menu'
 								data-uk-toggle='{"animation": "uk-animation-slide-left"}' hidden>
 								<span data-uk-navbar-toggle-icon></span>

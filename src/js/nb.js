@@ -2378,7 +2378,7 @@ if(typeof UIkit === "undefined") {
 						var testWidth = test.clientWidth;
 						document.body.removeChild(test);
 
-						if(testWidth > a.offsetWidth) {
+						if(a.offsetWidth && a.offsetWidth < testWidth) {
 							isDesktop = false;
 						}
 					});

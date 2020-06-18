@@ -52,8 +52,9 @@
 
 						<div class='uk-navbar-right'>
 							<div id='nav' class='nav'>
-								<ul class='uk-navbar-nav uk-flex-middle' data-uk-nb-nav>
-									<li class='uk-active'><a href='index.html' class='nb-open-lvl'>Home</a></li>
+								<ul class='uk-navbar-nav uk-flex-middle' data-uk-nb-nav='breakpoint:640'>
+									<li class='uk-active uk-visible@l'><a href='index.html' class='nb-open-lvl'>Home</a>
+									</li>
 									<li><a href='#' class='font-caret-down'>Services</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Groundworks</a></li>
@@ -68,15 +69,16 @@
 											<li><a href='#' class='font-caret-right'>Utilities</a></li>
 										</ul>
 									</li>
-									<li><a href='#' class='nb-open-lvl font-caret-down'>Products</a>
+									<li class='uk-visible@l'><a href='#'
+											class='nb-open-lvl font-caret-down'>Products</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Products 1</a></li>
 											<li><a href='#' class='font-caret-right'>Products 2</a></li>
 											<li><a href='#' class='font-caret-right'>Products 3</a></li>
 										</ul>
 									</li>
-									<li><a href='#'>About Us</a></li>
-									<li>
+									<li class='uk-visible@l'><a href='#'>About Us</a></li>
+									<li class='uk-hidden@l uk-visible@s'>
 										<a href='#' class='font-caret-down'>More</a>
 										<ul class='uk-nav-dropdown'>
 											<li><a href='#' class='font-caret-right'>Home</a></li>
@@ -104,7 +106,7 @@
 									</li>
 								</ul>
 							</div>
-							<a href='#' class='uk-hidden@s font-mail' aria-label='Contact Us'></a>
+							<a href='#' class='font-mail' aria-label='Contact Us'></a>
 							<a href='#nav' class='uk-navbar-toggle' aria-label='Open navigation menu'
 								data-uk-toggle='{"animation": "uk-animation-slide-left"}' hidden>
 								<span data-uk-navbar-toggle-icon></span>
@@ -139,7 +141,8 @@
 			<div class='nb-block nb-block-content uk-clearfix' data-nb-block='content'>
 
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-					deleniti atque corrupti quos dolores et quas molestias <a href='#'>example link</a> occaecati cupiditate non
+					deleniti atque corrupti quos dolores et quas molestias <a href='#'>example link</a> occaecati
+					cupiditate non
 					provident, similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum
 					fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 
@@ -293,7 +296,8 @@
 
 
 		<div class='uk-container uk-container-small'>
-			<div class='nb-block nb-block-content uk-clearfix uk-margin-large-bottom uk-margin-top' data-nb-block='content'>
+			<div class='nb-block nb-block-content uk-clearfix uk-margin-large-bottom uk-margin-top'
+				data-nb-block='content'>
 
 				<h3>Heading 3 <span class='light'>Light</span></h3>
 
@@ -526,8 +530,8 @@
 
 	<script src='js/uikit.min.js'></script>
 	<script src='js/uikit-icons.min.js'></script>
-	<script src='js/nb.min.js'></script>
-	<script src='js/theme.min.js'></script>
+	<script src='js/nb.js'></script>
+	<script src='js/theme.js'></script>
 </body>
 
 </html>

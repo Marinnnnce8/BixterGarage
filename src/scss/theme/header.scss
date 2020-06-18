@@ -109,28 +109,30 @@
         background-color: $gray-mid;
         color: $white;
         padding: 0;
+    }
 
-        &.uk-navbar-toggle {
-            z-index: 1002;
-            svg {
-                color: $white;
-                width: 15px;
-            }
+    .uk-navbar-toggle {
+        z-index: 1002;
+
+        svg {
+            color: $white;
+            width: 15px;
         }
+    }
 
-        &.font-mail {
-            background-color: $yellow;
-            margin-right: 4px;
-            position: relative;
+    .font-mail {
+        display: none;
+        background-color: $yellow;
+        margin-right: 4px;
+        position: relative;
 
-            &::before {
-                color: $gray-darkest;
-                font-size: 18px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                position: absolute;
-            }
+        &::before {
+            color: $gray-darkest;
+            font-size: 18px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
         }
     }
 
@@ -149,6 +151,12 @@
         }
     }
 
+    @media (max-width: $breakpointSmall) {
+        .font-mail {
+            display: block;
+        }
+    }
+
     @media (max-width: $breakpointXsmallMax) {
 
         .navbar-top,
@@ -162,5 +170,6 @@
         .uk-flex-right {
             justify-content: space-between;
         }
+
     }
 }
